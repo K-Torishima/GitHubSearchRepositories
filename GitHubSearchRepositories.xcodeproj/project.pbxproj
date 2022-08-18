@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		160569D628AE6A870001184D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569D528AE6A870001184D /* AppDelegate.swift */; };
 		160569D828AE6A870001184D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569D728AE6A870001184D /* SceneDelegate.swift */; };
-		160569DA28AE6A870001184D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569D928AE6A870001184D /* ViewController.swift */; };
-		160569DD28AE6A870001184D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160569DB28AE6A870001184D /* Main.storyboard */; };
 		160569DF28AE6A8A0001184D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160569DE28AE6A8A0001184D /* Assets.xcassets */; };
 		160569E228AE6A8A0001184D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160569E028AE6A8A0001184D /* LaunchScreen.storyboard */; };
+		160569ED28AE6E200001184D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569EC28AE6E200001184D /* SearchViewController.swift */; };
+		160569F228AE6EA70001184D /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160569F128AE6EA70001184D /* SearchViewController.storyboard */; };
+		160569F428AE6EB90001184D /* SearchRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569F328AE6EB90001184D /* SearchRouting.swift */; };
+		160569F628AE6EE20001184D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569F528AE6EE20001184D /* SearchViewModel.swift */; };
+		160569F928AE71430001184D /* NSObject+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569F828AE71430001184D /* NSObject+Extentions.swift */; };
+		160569FB28AE715E0001184D /* UIViewController+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FA28AE715E0001184D /* UIViewController+Extentions.swift */; };
+		160569FD28AE71AC0001184D /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FC28AE71AC0001184D /* UITableView+Register.swift */; };
+		160569FF28AE72B90001184D /* UIView+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FE28AE72B90001184D /* UIView+Instantiate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		160569D228AE6A870001184D /* GitHubSearchRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearchRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160569D528AE6A870001184D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		160569D728AE6A870001184D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		160569D928AE6A870001184D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		160569DC28AE6A870001184D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		160569DE28AE6A8A0001184D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160569E128AE6A8A0001184D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160569E328AE6A8A0001184D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160569EC28AE6E200001184D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		160569F128AE6EA70001184D /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		160569F328AE6EB90001184D /* SearchRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouting.swift; sourceTree = "<group>"; };
+		160569F528AE6EE20001184D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		160569F828AE71430001184D /* NSObject+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extentions.swift"; sourceTree = "<group>"; };
+		160569FA28AE715E0001184D /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
+		160569FC28AE71AC0001184D /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		160569FE28AE72B90001184D /* UIView+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Instantiate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,101 @@
 		160569D428AE6A870001184D /* GitHubSearchRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				160569D528AE6A870001184D /* AppDelegate.swift */,
-				160569D728AE6A870001184D /* SceneDelegate.swift */,
-				160569D928AE6A870001184D /* ViewController.swift */,
-				160569DB28AE6A870001184D /* Main.storyboard */,
-				160569DE28AE6A8A0001184D /* Assets.xcassets */,
-				160569E028AE6A8A0001184D /* LaunchScreen.storyboard */,
-				160569E328AE6A8A0001184D /* Info.plist */,
+				160569EA28AE6BF70001184D /* Source */,
+				160569E928AE6BF00001184D /* Resource */,
 			);
 			path = GitHubSearchRepositories;
+			sourceTree = "<group>";
+		};
+		160569E928AE6BF00001184D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				160569E028AE6A8A0001184D /* LaunchScreen.storyboard */,
+				160569DE28AE6A8A0001184D /* Assets.xcassets */,
+				160569E328AE6A8A0001184D /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		160569EA28AE6BF70001184D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				160569EB28AE6D820001184D /* Application */,
+				16056A0228AE754D0001184D /* Data */,
+				160569EF28AE6E600001184D /* Screen */,
+				160569F728AE71100001184D /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		160569EB28AE6D820001184D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				160569D528AE6A870001184D /* AppDelegate.swift */,
+				160569D728AE6A870001184D /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		160569EE28AE6E470001184D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		160569EF28AE6E600001184D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				160569F028AE6E910001184D /* Search */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		160569F028AE6E910001184D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				160569EC28AE6E200001184D /* SearchViewController.swift */,
+				160569F128AE6EA70001184D /* SearchViewController.storyboard */,
+				160569F328AE6EB90001184D /* SearchRouting.swift */,
+				160569F528AE6EE20001184D /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		160569F728AE71100001184D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				160569F828AE71430001184D /* NSObject+Extentions.swift */,
+				160569FA28AE715E0001184D /* UIViewController+Extentions.swift */,
+				160569FC28AE71AC0001184D /* UITableView+Register.swift */,
+				160569FE28AE72B90001184D /* UIView+Instantiate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16056A0028AE74E80001184D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		16056A0128AE75250001184D /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		16056A0228AE754D0001184D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				160569EE28AE6E470001184D /* Entity */,
+				16056A0128AE75250001184D /* API */,
+				16056A0028AE74E80001184D /* Repository */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +225,7 @@
 			files = (
 				160569E228AE6A8A0001184D /* LaunchScreen.storyboard in Resources */,
 				160569DF28AE6A8A0001184D /* Assets.xcassets in Resources */,
-				160569DD28AE6A870001184D /* Main.storyboard in Resources */,
+				160569F228AE6EA70001184D /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160569DA28AE6A870001184D /* ViewController.swift in Sources */,
+				160569F928AE71430001184D /* NSObject+Extentions.swift in Sources */,
+				160569F428AE6EB90001184D /* SearchRouting.swift in Sources */,
+				160569FB28AE715E0001184D /* UIViewController+Extentions.swift in Sources */,
+				160569F628AE6EE20001184D /* SearchViewModel.swift in Sources */,
+				160569ED28AE6E200001184D /* SearchViewController.swift in Sources */,
+				160569FF28AE72B90001184D /* UIView+Instantiate.swift in Sources */,
 				160569D628AE6A870001184D /* AppDelegate.swift in Sources */,
+				160569FD28AE71AC0001184D /* UITableView+Register.swift in Sources */,
 				160569D828AE6A870001184D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +251,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		160569DB28AE6A870001184D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				160569DC28AE6A870001184D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		160569E028AE6A8A0001184D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +385,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NZSUHT5DUD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubSearchRepositories/Info.plist;
+				INFOPLIST_FILE = GitHubSearchRepositories/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +413,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NZSUHT5DUD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GitHubSearchRepositories/Info.plist;
+				INFOPLIST_FILE = GitHubSearchRepositories/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
