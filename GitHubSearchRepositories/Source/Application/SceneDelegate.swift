@@ -21,10 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let searchViewController = SearchViewController.instantiate()
         let navigationController = UINavigationController(rootViewController: searchViewController)
-        
-        // 他をInjectする
-
-        
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
