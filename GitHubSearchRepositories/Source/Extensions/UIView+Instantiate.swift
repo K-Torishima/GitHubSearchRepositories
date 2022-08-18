@@ -28,3 +28,5 @@ extension NibInstantiatable where Self: UIView {
         return UINib(nibName: nibName, bundle: nibBundle).instantiate(withOwner: nibOwner, options: nibOptions)[instantiateIndex] as? UIView
     }
 }
+
+extension UIView: NibInstantiatable {}

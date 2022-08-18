@@ -19,6 +19,20 @@
 		160569FB28AE715E0001184D /* UIViewController+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FA28AE715E0001184D /* UIViewController+Extentions.swift */; };
 		160569FD28AE71AC0001184D /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FC28AE71AC0001184D /* UITableView+Register.swift */; };
 		160569FF28AE72B90001184D /* UIView+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160569FE28AE72B90001184D /* UIView+Instantiate.swift */; };
+		16056A0428AE78C60001184D /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0328AE78C60001184D /* Repositories.swift */; };
+		16056A0628AE78E90001184D /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0528AE78E90001184D /* Owner.swift */; };
+		16056A0828AE7D620001184D /* APIBaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0728AE7D620001184D /* APIBaseProtocols.swift */; };
+		16056A0C28AE7E3C0001184D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0B28AE7E3C0001184D /* APIService.swift */; };
+		16056A0E28AE7E530001184D /* APIServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0D28AE7E530001184D /* APIServiceImpl.swift */; };
+		16056A1028AE7E780001184D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A0F28AE7E780001184D /* APIError.swift */; };
+		16056A1228AE7EB10001184D /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1128AE7EB10001184D /* SearchRepository.swift */; };
+		16056A1428AE7EC40001184D /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1328AE7EC40001184D /* SearchRepositoryImpl.swift */; };
+		16056A1728AE7F330001184D /* GitHubSearchAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1628AE7F330001184D /* GitHubSearchAPIRequest.swift */; };
+		16056A1928AE7F460001184D /* GitHubSearchAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1828AE7F460001184D /* GitHubSearchAPIResponse.swift */; };
+		16056A1B28AE7F8C0001184D /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1A28AE7F8C0001184D /* Sort.swift */; };
+		16056A1D28AE7FA30001184D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1C28AE7FA30001184D /* Order.swift */; };
+		16056A2028AE8D5E0001184D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1E28AE8D5E0001184D /* SearchTableViewCell.swift */; };
+		16056A2128AE8D5E0001184D /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16056A1F28AE8D5E0001184D /* SearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +50,20 @@
 		160569FA28AE715E0001184D /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
 		160569FC28AE71AC0001184D /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		160569FE28AE72B90001184D /* UIView+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Instantiate.swift"; sourceTree = "<group>"; };
+		16056A0328AE78C60001184D /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		16056A0528AE78E90001184D /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		16056A0728AE7D620001184D /* APIBaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBaseProtocols.swift; sourceTree = "<group>"; };
+		16056A0B28AE7E3C0001184D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		16056A0D28AE7E530001184D /* APIServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImpl.swift; sourceTree = "<group>"; };
+		16056A0F28AE7E780001184D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		16056A1128AE7EB10001184D /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		16056A1328AE7EC40001184D /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
+		16056A1628AE7F330001184D /* GitHubSearchAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchAPIRequest.swift; sourceTree = "<group>"; };
+		16056A1828AE7F460001184D /* GitHubSearchAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchAPIResponse.swift; sourceTree = "<group>"; };
+		16056A1A28AE7F8C0001184D /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		16056A1C28AE7FA30001184D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		16056A1E28AE8D5E0001184D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		16056A1F28AE8D5E0001184D /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +135,10 @@
 		160569EE28AE6E470001184D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				16056A0328AE78C60001184D /* Repositories.swift */,
+				16056A0528AE78E90001184D /* Owner.swift */,
+				16056A1A28AE7F8C0001184D /* Sort.swift */,
+				16056A1C28AE7FA30001184D /* Order.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -126,6 +158,8 @@
 				160569F128AE6EA70001184D /* SearchViewController.storyboard */,
 				160569F328AE6EB90001184D /* SearchRouting.swift */,
 				160569F528AE6EE20001184D /* SearchViewModel.swift */,
+				16056A1E28AE8D5E0001184D /* SearchTableViewCell.swift */,
+				16056A1F28AE8D5E0001184D /* SearchTableViewCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -144,6 +178,8 @@
 		16056A0028AE74E80001184D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				16056A1128AE7EB10001184D /* SearchRepository.swift */,
+				16056A1328AE7EC40001184D /* SearchRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -151,6 +187,11 @@
 		16056A0128AE75250001184D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				16056A0728AE7D620001184D /* APIBaseProtocols.swift */,
+				16056A0B28AE7E3C0001184D /* APIService.swift */,
+				16056A0D28AE7E530001184D /* APIServiceImpl.swift */,
+				16056A0F28AE7E780001184D /* APIError.swift */,
+				16056A1528AE7F1C0001184D /* Search */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -163,6 +204,15 @@
 				16056A0028AE74E80001184D /* Repository */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		16056A1528AE7F1C0001184D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				16056A1628AE7F330001184D /* GitHubSearchAPIRequest.swift */,
+				16056A1828AE7F460001184D /* GitHubSearchAPIResponse.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				160569E228AE6A8A0001184D /* LaunchScreen.storyboard in Resources */,
+				16056A2128AE8D5E0001184D /* SearchTableViewCell.xib in Resources */,
 				160569DF28AE6A8A0001184D /* Assets.xcassets in Resources */,
 				160569F228AE6EA70001184D /* SearchViewController.storyboard in Resources */,
 			);
@@ -237,12 +288,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				160569F928AE71430001184D /* NSObject+Extentions.swift in Sources */,
+				16056A0428AE78C60001184D /* Repositories.swift in Sources */,
 				160569F428AE6EB90001184D /* SearchRouting.swift in Sources */,
 				160569FB28AE715E0001184D /* UIViewController+Extentions.swift in Sources */,
 				160569F628AE6EE20001184D /* SearchViewModel.swift in Sources */,
 				160569ED28AE6E200001184D /* SearchViewController.swift in Sources */,
+				16056A1D28AE7FA30001184D /* Order.swift in Sources */,
+				16056A0E28AE7E530001184D /* APIServiceImpl.swift in Sources */,
+				16056A1228AE7EB10001184D /* SearchRepository.swift in Sources */,
+				16056A1428AE7EC40001184D /* SearchRepositoryImpl.swift in Sources */,
+				16056A1928AE7F460001184D /* GitHubSearchAPIResponse.swift in Sources */,
 				160569FF28AE72B90001184D /* UIView+Instantiate.swift in Sources */,
+				16056A1028AE7E780001184D /* APIError.swift in Sources */,
+				16056A1728AE7F330001184D /* GitHubSearchAPIRequest.swift in Sources */,
+				16056A1B28AE7F8C0001184D /* Sort.swift in Sources */,
+				16056A2028AE8D5E0001184D /* SearchTableViewCell.swift in Sources */,
+				16056A0828AE7D620001184D /* APIBaseProtocols.swift in Sources */,
 				160569D628AE6A870001184D /* AppDelegate.swift in Sources */,
+				16056A0C28AE7E3C0001184D /* APIService.swift in Sources */,
+				16056A0628AE78E90001184D /* Owner.swift in Sources */,
 				160569FD28AE71AC0001184D /* UITableView+Register.swift in Sources */,
 				160569D828AE6A870001184D /* SceneDelegate.swift in Sources */,
 			);
