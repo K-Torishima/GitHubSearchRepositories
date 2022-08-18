@@ -9,7 +9,7 @@ import UIKit
 
 class SearchTableViewCell: UITableViewCell {
 
-    
+    // TODO: - UI実装
     @IBOutlet private weak var previewLabel: UILabel!
     
     func apply(data: Repositories) {

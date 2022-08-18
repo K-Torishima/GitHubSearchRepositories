@@ -8,6 +8,12 @@
 import Foundation
 import Combine
 
+/* TODO
+ - スロットリング実装
+ - ページング実装
+ */
+
+
 @MainActor
 final class SearchViewModel {
     

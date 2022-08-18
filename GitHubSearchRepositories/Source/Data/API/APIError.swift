@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 enum APIError: Error {
     case noData(HTTPURLResponse)
     case noResponse
