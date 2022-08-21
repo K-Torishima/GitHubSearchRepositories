@@ -12,6 +12,7 @@ final class SearchViewController: UIViewController {
     
     private var viewModel: SearchViewModel = SearchViewModel()
     private var cancelables = Set<AnyCancellable>()
+    private let debounce = DispatchQueue.global().debounce(delay: .milliseconds(1000))
     
     @IBOutlet private weak var searchBar: UISearchBar! {
         didSet {
@@ -78,12 +79,22 @@ final class SearchViewController: UIViewController {
 }
 
 extension SearchViewController: UISearchBarDelegate {
+    // インクリメンタルサーチ
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let searchText = searchBar.text,
+              !searchText.isEmpty else {
+            return
+        }
+        viewModel.debounceApply(searchText: searchText)
+    }
+    
+    // エンター押す時に叩く
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text,
               !searchText.isEmpty else {
             return
         }
-        viewModel.apply(searchText: searchText)
+        viewModel.throttleApply(searchText: searchText)
     }
 }
 
