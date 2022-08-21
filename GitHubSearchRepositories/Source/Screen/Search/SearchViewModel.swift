@@ -73,7 +73,7 @@ final class SearchViewModel {
         }
     }
     
-    private func reset() {
+    func reset() {
         datasource.removeAll()
     }
 }
