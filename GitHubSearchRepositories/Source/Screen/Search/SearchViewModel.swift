@@ -8,19 +8,8 @@
 import Foundation
 import Combine
 
-/* TODO
- - スロットリング実装
- - ページング実装
- */
-
-
 @MainActor
 final class SearchViewModel {
-    
-    enum DisplayState {
-        case initial
-        case main
-    }
     
     enum ProgressState {
         case none
@@ -28,7 +17,6 @@ final class SearchViewModel {
     }
     
     // Publisher
-    @Published private (set) var displayState: DisplayState = .initial
     @Published private (set) var progressState: ProgressState = .none
     @Published private (set) var datasource: [Repositories] = []
     
@@ -38,14 +26,16 @@ final class SearchViewModel {
     private let throttle = DispatchQueue.global().throttle(delay: .milliseconds(1000))
     
     private let searchRepository: SearchRepository
+    private weak var router: SearchRouting?
     
     init(searchRepository: SearchRepository = SearchRepositoryImpl()) {
         self.searchRepository = searchRepository
     }
     
-    func viewDidLoad() {
+    func set(router: SearchRouting) {
+        self.router = router
     }
-    
+        
     func debounceApply(searchText: String) {
         reset()
         progressState = .fetch
@@ -64,7 +54,7 @@ final class SearchViewModel {
     
     func didSelectRowAt(_ row: Int) {
         let data = datasource[row]
-        print(data)
+        router?.navigateDetail(data: data)
     }
     
     private func fetchRepositories(query: String, page: Int, perPage: Int) {
@@ -86,5 +76,4 @@ final class SearchViewModel {
     private func reset() {
         datasource.removeAll()
     }
-    
 }

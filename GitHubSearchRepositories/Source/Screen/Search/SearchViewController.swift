@@ -12,7 +12,6 @@ final class SearchViewController: UIViewController {
     
     private var viewModel: SearchViewModel = SearchViewModel()
     private var cancelables = Set<AnyCancellable>()
-    private let debounce = DispatchQueue.global().debounce(delay: .milliseconds(1000))
     
     @IBOutlet private weak var searchBar: UISearchBar! {
         didSet {
@@ -36,7 +35,6 @@ final class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.viewDidLoad()
         initialize()
         bind()
     }
@@ -44,19 +42,11 @@ final class SearchViewController: UIViewController {
     private func initialize() {
         title = "Search"
         navigationController?.navigationBar.prefersLargeTitles = true
+        viewModel.set(router: self)
     }
     
     private func bind() {
-        viewModel.$displayState
-            .receive(on: DispatchQueue.main)
-            .sink { state in
-                switch state {
-                case .initial:
-                    print("initial")
-                case .main:
-                    print("main")
-                }
-            }.store(in: &cancelables)
+        // indicator制御
         viewModel.$progressState
             .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
@@ -69,6 +59,7 @@ final class SearchViewController: UIViewController {
                     self?.indicator.startAnimating()
                 }
             }.store(in: &cancelables)
+        // datasource反映
         viewModel.$datasource
             .receive(on: DispatchQueue.main)
             .sink { [weak self] datasource in
@@ -114,3 +105,5 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
+extension SearchViewController: SearchRouting {}
