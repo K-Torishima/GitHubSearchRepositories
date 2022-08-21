@@ -66,7 +66,6 @@ final class SearchViewModel {
                                                                                 page: page,
                                                                                 perPage: perPage)
                 datasource.append(contentsOf: response.items)
-                print(response.items)
             } catch let error {
                 print(error.localizedDescription)
             }

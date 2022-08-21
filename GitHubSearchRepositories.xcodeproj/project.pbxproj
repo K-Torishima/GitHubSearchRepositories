@@ -33,6 +33,7 @@
 		16056A1D28AE7FA30001184D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1C28AE7FA30001184D /* Order.swift */; };
 		16056A2028AE8D5E0001184D /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16056A1E28AE8D5E0001184D /* SearchTableViewCell.swift */; };
 		16056A2128AE8D5E0001184D /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16056A1F28AE8D5E0001184D /* SearchTableViewCell.xib */; };
+		16E7292828B1FA3D0062D079 /* UIImageView+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E7292728B1FA3D0062D079 /* UIImageView+load.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		16056A1C28AE7FA30001184D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		16056A1E28AE8D5E0001184D /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		16056A1F28AE8D5E0001184D /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		16E7292728B1FA3D0062D079 /* UIImageView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+load.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				160569FA28AE715E0001184D /* UIViewController+Extentions.swift */,
 				160569FC28AE71AC0001184D /* UITableView+Register.swift */,
 				160569FE28AE72B90001184D /* UIView+Instantiate.swift */,
+				16E7292728B1FA3D0062D079 /* UIImageView+load.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				16056A2028AE8D5E0001184D /* SearchTableViewCell.swift in Sources */,
 				16056A0828AE7D620001184D /* APIBaseProtocols.swift in Sources */,
 				160569D628AE6A870001184D /* AppDelegate.swift in Sources */,
+				16E7292828B1FA3D0062D079 /* UIImageView+load.swift in Sources */,
 				16056A0C28AE7E3C0001184D /* APIService.swift in Sources */,
 				16056A0628AE78E90001184D /* Owner.swift in Sources */,
 				160569FD28AE71AC0001184D /* UITableView+Register.swift in Sources */,
