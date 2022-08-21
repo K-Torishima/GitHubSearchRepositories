@@ -34,6 +34,8 @@ final class SearchViewModel {
     
     private var page: Int = 1
     private let perPage: Int = 20
+    private let debounce = DispatchQueue.global().debounce(delay: .milliseconds(500))
+    private let throttle = DispatchQueue.global().throttle(delay: .milliseconds(1000))
     
     private let searchRepository: SearchRepository
     
@@ -44,10 +46,20 @@ final class SearchViewModel {
     func viewDidLoad() {
     }
     
-    func apply(searchText: String) {
+    func debounceApply(searchText: String) {
         reset()
-        fetchRepositories(query: searchText, page: page, perPage: perPage)
-        
+        progressState = .fetch
+        debounce { [unowned self] in
+            fetchRepositories(query: searchText, page: page, perPage: perPage)
+        }
+    }
+    
+    func throttleApply(searchText: String) {
+        reset()
+        progressState = .fetch
+        throttle { [unowned self] in
+            fetchRepositories(query: searchText, page: page, perPage: perPage)
+        }
     }
     
     func didSelectRowAt(_ row: Int) {
@@ -56,7 +68,6 @@ final class SearchViewModel {
     }
     
     private func fetchRepositories(query: String, page: Int, perPage: Int) {
-        progressState = .fetch
         Task {
             do {
                 defer { Task { @MainActor in progressState = .none } }
@@ -66,7 +77,6 @@ final class SearchViewModel {
                                                                                 page: page,
                                                                                 perPage: perPage)
                 datasource.append(contentsOf: response.items)
-                print(response.items)
             } catch let error {
                 print(error.localizedDescription)
             }
