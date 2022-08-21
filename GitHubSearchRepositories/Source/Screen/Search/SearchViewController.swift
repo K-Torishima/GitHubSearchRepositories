@@ -74,6 +74,7 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard let searchText = searchBar.text,
               !searchText.isEmpty else {
+            viewModel.reset()
             return
         }
         viewModel.debounceApply(searchText: searchText)
@@ -83,6 +84,7 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchText = searchBar.text,
               !searchText.isEmpty else {
+            viewModel.reset()
             return
         }
         viewModel.throttleApply(searchText: searchText)
